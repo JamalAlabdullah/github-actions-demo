@@ -27,21 +27,11 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo Hello, world!
+        run: sh ./githubAction-script.sh
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          echo what is in this directory?
-          ls -a
-          echo
-          echo is Java installed?
-          java -version
-          echo is Git installed?
-          git --version
-          echo what about build tools?
-          gradle --version
-          ant -version
-          mvn -version
+          echo I take the ordre from one-lone-script.
           
           
